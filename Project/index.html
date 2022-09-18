@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Codestruct</title>
+        <link rel="stylesheet" href="./Resources/CSS/styles.css">
+        <link rel="stylesheet" href="https://use.typekit.net/lgm7epq.css">
+    </head>
+
+    <body>
+
+        <!--Codestruct Header-->
+        <header>
+            <div class="header">
+                <h1 class="title">Codestruct</h1>
+                <h4 class="slogan highlight">&lt;Helping web developers&gt;</h4>
+            </div>
+            <div class="topic-container">
+                <h2 class="topic white-text">CSS/Layout/position:</h2>
+                <h3 class="sub-topic white-text"><a href="#offset-properties">../offset properties</a></h3>
+            </div>
+            <div>
+                <nav class="navigation">
+                    <a href="#static">static</a>
+                    <a href="#relative">relative</a>
+                    <a href="#absolute">absolute</a>
+                    <a href="#fixed">fixed</a>
+                    <a href="#sticky">sticky</a>    
+                </nav>
+            </div> 
+        </header>
+
+        <!--Position Values-->
+        <main>
+            <section class="position">
+                <p class="description">
+                    The <span class="highlight">position</span> property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).
+                </p>
+                <p class="more-info white-text">
+                    Elements are positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.
+                </p>
+            </section>
+            <section class="position-value" id="static">
+                <h2 class="highlight">position: static;</h2>
+                <h3 class="side-info">(HTML default value)</h3>
+                <p>
+                    Static positioned elements are not affected by the <span class="highlight">top</span>, <span class="highlight">bottom</span>, <span class="highlight">left</span>, and <span class="highlight">right</span> properties. An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page.
+                </p>
+            </section>
+            <section class="position-value" id="relative">
+                <h2 class="highlight">position: relative;</h2>
+                <p>
+                    An element with <span class="highlight">position: relative;</span> is positioned relative to its normal position. Other content will not be adjusted to fit into any gap left by the element.
+                </p>
+                <p class="note">
+                    <strong>Note:</strong> The most common case for <span class="highlight">position: relative;</span> is when setting a child element to <span class="highlight">position: absolute;</span> so that it is relatively positioned to its parent.
+                </p>
+            </section>
+            <section class="position-value" id="absolute">
+                <h2 class="highlight">position: absolute;</h2>
+                <p>
+                    An element with <span class="highlight">position: absolute;</span> is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+                </p>
+                <p class="note">
+                    <strong>Note:</strong> Absolute positioned elements are removed from the normal flow, and can overlap elements.
+                </p>
+            </section>
+            <section class="position-value" id="fixed">
+                <h2  class="highlight">position: fixed;</h2>
+                <p>
+                    An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled.
+                </p>
+                <p class="note">
+                    <strong>Note:</strong> A fixed element does not leave a gap in the page where it would normally have been located.
+                </p>
+            </section>
+            <section class="position-value" id="sticky">
+                <h2 class="highlight">position: sticky;</h2>
+                <p>
+                    An element with <span class="highlight">position: sticky;</span> is positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+                </p>
+                <p class="note">
+                    <strong>Note:</strong> Internet Explorer does not support sticky positioning. Safari requires a -webkit- prefix.
+                </p>
+            </section>
+
+            <!-- Offset Properties-->
+            <section id="offset-properties">
+                <h2 class="highlight">Offset properties</h2>
+                <p>
+                    They will determine how far from <span class="highlight">top</span>, <span class="highlight">bottom</span>, <span class="highlight">left</span>, or <span class="highlight">right</span> an element would be positioned according to the type of positioning.
+                </p>
+
+                <!--Offset properties chart-->
+                <table class="table">
+                    <thead id="table-headers">
+                        <tr>
+                            <th scope="col">Property</th>
+                            <th scope="col">Values</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-content">
+                        <tr> <!--Content Row 1-->
+                            <td class="property highlight">top</td>
+                            <td class= "values" rowspan="4">Can be set with length units such as: px, em, rem, %, etc.</td>
+                            <td>Moves the element down from the top.</td>
+                        </tr>
+                        <tr> <!-- Content Row 2-->
+                            <td class="property highlight">bottom</td>
+                            <td class="description">Moves the element up from the bottom.</td>
+                        </tr>
+                        <tr> <!-- Content Row 3-->
+                            <td class="property highlight">left</td>
+                            <td class="description">Moves the element away from the left side.</td>
+                        </tr>
+                        <tr> <!-- Content Row 4-->
+                            <td class="property highlight">right</td>
+                            <td class="description">Moves the element away from the right side.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <!--Codestruct Footer-->
+        <footer>
+            <div class="author">
+                <h5>by dp-sotodeleon</h5>
+            </div>
+            <div class="contact">
+                <ul>
+                    <li class="li-header white-text"><strong>Contact information</strong></li>
+                    <li class="e-mail white-text">dp.sotodeleon@hotmail.com</li>
+                    <li class="phone-number white-text">619-913-8986</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
